@@ -50,6 +50,16 @@ export const exercises = {
     constraints: { kneesSafe: true, hipSafe: true, impactLevel: 'low' }
   },
 
+  driveway_sprint: {
+    id: 'driveway_sprint', name: 'Driveway Sprint', category: 'cardio',
+    trackingType: 'timed', defaultSeconds: 0,
+    description: 'Sprint from the house up the driveway to the road. Walk back down.',
+    cues: ['Pump arms hard on the gravel', 'Short powerful strides', 'Don\'t let up till the road', 'Walk the descent — always'],
+    muscleGroups: ['quads', 'glutes', 'calves', 'cardio'],
+    equipment: [], terrain: 'driveway',
+    constraints: { kneesSafe: true, hipSafe: true, impactLevel: 'moderate' }
+  },
+
   // ── Upper Body ──
   pullups: {
     id: 'pullups', name: 'Pull-Ups', category: 'upper',
@@ -429,6 +439,7 @@ export const calledExercises = [
   { exerciseId: 'pullups', prescription: '5 Pull-Ups' },
   { exerciseId: 'dead_hang', prescription: '30s Dead Hang' },
   { exerciseId: 'draw_sprint', prescription: 'One Draw Sprint' },
+  { exerciseId: 'driveway_sprint', prescription: 'Driveway Sprint — house to road' },
   { exerciseId: 'pushups', prescription: '15 Push-Ups' },
   { exerciseId: 'qm_movement', prescription: '20s QM Hold' },
   { exerciseId: 'plank', prescription: '45s Plank' },
