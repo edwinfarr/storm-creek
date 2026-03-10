@@ -126,6 +126,16 @@ function renderMobility(container, sequence, phase) {
       <div class="workout-round">${phaseDesc} \u2014 ${progress}</div>
       <div class="workout-exercise-name">${movement.name}</div>
       <div class="workout-cue">${movement.cue}</div>
+      ${movement.videoSearch ? `
+        <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(movement.videoSearch)}"
+           target="_blank" rel="noopener"
+           style="display: inline-block; padding: 8px 20px; margin: 8px 0;
+                  background: var(--bg-elevated); border: 1px solid var(--accent-steel);
+                  border-radius: 8px; color: var(--text-primary); text-decoration: none;
+                  font-size: 14px; font-weight: 600;">
+          \u25B6 How do I do this?
+        </a>
+      ` : ''}
       <div id="timer-container"></div>
       <button class="btn-done" id="btn-next">DONE \u2192 NEXT</button>
       <button class="btn btn-secondary btn-small mt-16" id="btn-skip-mobility"

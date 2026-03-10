@@ -97,6 +97,17 @@ export function showExerciseModal(exerciseId) {
       </div>
     ` : ''}
 
+    ${ex.videoSearch ? `
+      <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(ex.videoSearch)}"
+         target="_blank" rel="noopener"
+         style="display: block; width: 100%; min-height: 56px; margin-top: 20px;
+                background: #6b1010; color: #fff; border: none; border-radius: 8px;
+                font-size: 18px; font-weight: 700; text-decoration: none;
+                text-align: center; line-height: 56px; letter-spacing: 1px;">
+        \u25B6 WATCH DEMO
+      </a>
+    ` : ''}
+
     <button class="modal-close" id="modal-close">GOT IT</button>
   `;
 
