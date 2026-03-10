@@ -247,6 +247,16 @@ function renderStormExercise(container) {
       <div class="workout-station">${stationInfo.icon || ''} ${stationInfo.name}</div>
       <div class="workout-exercise-name exercise-tappable" id="exercise-name-tap" data-exercise-id="${ex.id}">${ex.name}</div>
       <div class="workout-cue">${cue}</div>
+      ${ex.videoSearch ? `
+        <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(ex.videoSearch)}"
+           target="_blank" rel="noopener"
+           style="display: inline-block; padding: 8px 20px; margin: 4px 0 12px;
+                  background: var(--bg-elevated); border: 1px solid var(--accent-steel);
+                  border-radius: 8px; color: var(--text-primary); text-decoration: none;
+                  font-size: 14px; font-weight: 600;">
+          \u25B6 How do I do this?
+        </a>
+      ` : ''}
       <div id="input-container"></div>
       <button class="btn-done" id="btn-done">DONE \u2192 NEXT</button>
       ${renderQuitButton()}
