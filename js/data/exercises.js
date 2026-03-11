@@ -250,6 +250,16 @@ export const exercises = {
     constraints: { kneesSafe: true, hipSafe: true, impactLevel: 'low' },
     videoSearch: 'farmer carry walk proper form technique'
   },
+  stone_hold: {
+    id: 'stone_hold', name: 'Stone Hold & Extend', category: 'carry',
+    trackingType: 'hold', defaultSeconds: 30,
+    description: 'Hold a heavy object (concrete bag, stone, sandbag) at chest. Slowly press it away from your body and hold. The further out, the harder it gets.',
+    cues: ['Start hugged to chest', 'Slowly extend arms forward', 'Fight to keep it there', 'Core braced — don\'t let it pull you forward', 'Bring it back in, repeat'],
+    muscleGroups: ['core', 'shoulders', 'biceps', 'grip', 'forearms'],
+    equipment: ['log'], terrain: 'flat',
+    constraints: { kneesSafe: true, hipSafe: true, impactLevel: 'none' },
+    videoSearch: 'heavy object hold extend away from body core exercise zercher hold'
+  },
   shoulder_carry: {
     id: 'shoulder_carry', name: 'Log Shoulder Carry', category: 'carry',
     trackingType: 'timed', defaultSeconds: 60,
